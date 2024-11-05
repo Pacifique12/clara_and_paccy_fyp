@@ -19,7 +19,14 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "CAMERA",
+        "MEDIA_LIBRARY",
+        "NOTIFICATIONS"
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -27,10 +34,22 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "expo-notifications"
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "apiKey": "646e427364d976db752529e161940cd0",
+      "eas": {
+        "projectId": "030d9bdc-805f-46a1-a4e6-4576b110a4fa"
+      }
+    },
+    "notification": {
+      "icon": "./assets/images/icon.png",
+      "color": "#007bff"
+    },
+    "owner": "ypacifique"
   }
 }
